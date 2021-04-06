@@ -12,6 +12,8 @@ def homepage():
 def utility_processor():
     def tmdb_image_url(path, size):
         return tmdb_client.get_poster_url(path, size)
+    def tmdb_title():
+        return tmdb_client.get_poster_url
     return {"tmdb_image_url": tmdb_image_url}
 
 if __name__ == '__main__':
