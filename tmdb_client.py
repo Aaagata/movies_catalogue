@@ -13,3 +13,7 @@ def get_poster_url(poster_api_path, size="w342"):
 def get_movie_info(id):
     title = "https://api.themoviedb.org/3/movie/id/"
     return movie.titile
+
+def get_movies(how_many):
+    data = get_popular_movies()
+    return data["results"][:how_many]
